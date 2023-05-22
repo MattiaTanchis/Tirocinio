@@ -1,0 +1,41 @@
+version: "3.8" #versione docker-compose
+#definizione dei servizi node-red e mosquitto
+services:
+  nodeRed:
+    image: nodered/node-red:latest
+    container_name: nodeRed
+    restart: always
+    environment:
+      - SERVICE_NAME=nodeRed
+      - TZ=Europe/Amesterdam
+    ports:
+      - "1880:1880"
+    volumes:
+      - nodeRed_data:/var/lib/nodeRed/data
+    links: 
+      - mosquitto
+    networks:
+      - miaReteProgetto
+  mosquitto:
+    image: eclipse-mosquitto
+    hostname: mosquitto
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - mosquitto_data:/var/lib/mosquitto/data
+      - ./mosquitto_log:/mosquitto/log/
+      - ./mosquitto_config/:/mosquitto/config/
+    networks:
+      - miaReteProgetto
+   
+volumes:
+  nodeRed_data:
+    name: nodeRed_data
+  mosquitto_data:
+    name: mosquitto_data
+networks:
+  miaReteProgetto:
+    external: true

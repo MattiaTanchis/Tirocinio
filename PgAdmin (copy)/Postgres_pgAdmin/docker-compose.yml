@@ -1,0 +1,45 @@
+version: "3.8" #versione di docker-compose#
+
+services:
+  db: #servizio del DB con postgresSQL#
+    build:
+      context: .
+      dockerfile: postgres.dockerfile #inizializzo il postgres con dockerfile propietario per poter importare nella cartella adeguata il file .sh
+    image: postgres
+    container_name: postgresqlte
+    restart: always
+    ports:
+      - "54320:5432"
+    environment: #variabili che vanno inizializzate del DB #
+      POSTGRES_USER: mattia
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: mattiaDB
+    volumes: #volumi per salvare perm i dati#
+      - postgres_data:/var/lib/postgresql/data #volume permanente per memorizzazione dati del DB
+      - ./db/db_init:/var/lib/data_init/db #bind mount per passare file sql e csv per setting della tabella
+    networks:
+      - miaReteProgetto #creazione della rete per far comunicare succ altri container 
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4
+    restart: always
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@mattia.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin #volume per mantere dati PgAdmin4 in modo permanente
+    networks:
+      - miaReteProgetto
+
+volumes: #definizione nomi dei volumi definiti in postgress e pgAdmin
+  postgres_data:
+    name: postgres_data
+  pgadmin-data:
+    name: pgadmin_data
+networks:
+  miaReteProgetto:
+    external: true
+  
+    
