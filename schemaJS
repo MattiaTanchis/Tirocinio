@@ -1,0 +1,707 @@
+[
+    {
+        "id": "c29f7298e995f31a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7aa1f4e9917cbdbf",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ad0e2af247c6677b",
+        "type": "group",
+        "z": "c29f7298e995f31a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c0d8db577d7f9e54",
+            "389dcbc6555f3acd",
+            "4916140a24740ab1",
+            "3a920fcb9fd6311d"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 592,
+        "h": 142
+    },
+    {
+        "id": "8ca641fe0bef751b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.112.4",
+        "port": "1883",
+        "clientid": "client",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "10000",
+        "cleansession": false,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a86200be6a8f4e14",
+        "type": "postgreSQLConfig",
+        "name": "DB_test",
+        "host": "192.168.112.3",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "test_script",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "mattia",
+        "userFieldType": "str",
+        "password": "admin",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "f3ec6113173a7ab7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.112.4",
+        "port": "1883",
+        "clientid": "client",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "10000",
+        "cleansession": false,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b7a4a588933920dd",
+        "type": "postgreSQLConfig",
+        "name": "DB_test",
+        "host": "192.168.112.3",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "test_script",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "mattia",
+        "userFieldType": "str",
+        "password": "admin",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "2b0cf117.cff45e",
+        "type": "mqtt-broker",
+        "name": "mqtt://broker/smmr",
+        "broker": "broker",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "aa5dba3d5018a717",
+        "type": "postgresdb",
+        "cfgname": "psql://db/smr",
+        "hostname": "db",
+        "port": "5432",
+        "db": "smr",
+        "ssl": false
+    },
+    {
+        "id": "66dda3cc9afe7121",
+        "type": "postgresdb",
+        "cfgname": "psql://db/smr",
+        "hostname": "db",
+        "port": "5432",
+        "db": "smr",
+        "ssl": false
+    },
+    {
+        "id": "20ae1e52d1eef983",
+        "type": "postgreSQLConfig",
+        "name": "myuser@timescale:5432/iot",
+        "host": "timescale",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "iot",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "myuser",
+        "userFieldType": "str",
+        "password": "???",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "c0d8db577d7f9e54",
+        "type": "mqtt out",
+        "z": "c29f7298e995f31a",
+        "g": "ad0e2af247c6677b",
+        "name": "",
+        "topic": "test/data",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f3ec6113173a7ab7",
+        "x": 560,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "eef3ccb061c87802",
+        "type": "mqtt in",
+        "z": "c29f7298e995f31a",
+        "name": "",
+        "topic": "test/data",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "f3ec6113173a7ab7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 131,
+        "y": 319,
+        "wires": [
+            [
+                "2ea2fe24d574b3aa"
+            ]
+        ]
+    },
+    {
+        "id": "389dcbc6555f3acd",
+        "type": "inject",
+        "z": "c29f7298e995f31a",
+        "g": "ad0e2af247c6677b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ciao",
+        "payloadType": "str",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "4916140a24740ab1"
+            ]
+        ]
+    },
+    {
+        "id": "4916140a24740ab1",
+        "type": "data-generator",
+        "z": "c29f7298e995f31a",
+        "g": "ad0e2af247c6677b",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "json",
+        "template": "{\n    \"id_pers\": \"{{int 0 10000}}\",\n    \"name\": \"{{firstName}} {{lastName}}\",\n    \"city\": \"{{city}}\"\n}",
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "c0d8db577d7f9e54"
+            ]
+        ]
+    },
+    {
+        "id": "3a920fcb9fd6311d",
+        "type": "comment",
+        "z": "c29f7298e995f31a",
+        "g": "ad0e2af247c6677b",
+        "name": "generazione casuale dati",
+        "info": "genero casualmente dati tramite la funzione\ndata generator e la pubblico sulla coda MQTT",
+        "x": 350,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2ea7090fdab6982e",
+        "type": "postgresql",
+        "z": "c29f7298e995f31a",
+        "name": "",
+        "query": "msg.query=multipleQuery;",
+        "postgreSQLConfig": "a86200be6a8f4e14",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 590,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "349faf4fddf5d7e1",
+        "type": "debug",
+        "z": "c29f7298e995f31a",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 711,
+        "y": 439,
+        "wires": []
+    },
+    {
+        "id": "2c6d6aa53eeb1f5b",
+        "type": "csv",
+        "z": "c29f7298e995f31a",
+        "name": "",
+        "sep": ".",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "id_pers,name,city",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "8cbca8945988c729"
+            ]
+        ]
+    },
+    {
+        "id": "2ea2fe24d574b3aa",
+        "type": "join",
+        "z": "c29f7298e995f31a",
+        "name": "BU",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "5",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 101,
+        "y": 539,
+        "wires": [
+            [
+                "349faf4fddf5d7e1"
+            ]
+        ]
+    },
+    {
+        "id": "97d9e905346aa459",
+        "type": "comment",
+        "z": "c29f7298e995f31a",
+        "name": "PROSSIMO PASSO",
+        "info": "OK con il join aspetta che arrivino 5 mex\nprima che manda i dati al CSV.\n\nDA FARE:\nImplementare funzione che permetta \ndi prendere i 5 valori dal CSV e che\ncostruisca una stringa per fare \nl'insert di piu campi contemp\n\n\nINSERT INTO persona_script VALUES\n(\n{{{msg.payload.id_pers}}},'{{{msg.payload.name}}}','{{{msg.payload.city}}}'\n);\n\n{{int 0 100000}}.{{firstName}} {{lastName}}.{{city}}\n",
+        "x": 250,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8cbca8945988c729",
+        "type": "function",
+        "z": "c29f7298e995f31a",
+        "name": "crea_query",
+        "func": "var multipleQuery=\"INSERT INTO persona_script(id_pers,name,city) VALUES (\"\nfor (let i = 0; i < 5; i++) {\n    multipleQuery=+\"(\"+ msg.payload.id_pers+\",'\"+msg.payload.name+\"','\"+msg.payload.city+\"'),\";\n}\nmultipleQuery = +\";\"\nreturn multipleQuery;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 520,
+        "wires": [
+            [
+                "2ea7090fdab6982e"
+            ]
+        ]
+    },
+    {
+        "id": "cf01539ac3939e5a",
+        "type": "data-generator",
+        "z": "c29f7298e995f31a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "text",
+        "template": "{\n    \"name\": \"{{firstName}} {{lastName}}\",\n    \"work\": \"{{company}}\",\n    \"email\": \"{{email}}\",\n    \"address\": \"{{int 1 100}} {{street}}\",\n    \"country\": \"{{country}}\"\n}",
+        "x": 380,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36d7a2e7.38e4de",
+        "type": "inject",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "1b00f74dc3098005"
+            ]
+        ]
+    },
+    {
+        "id": "ee38d447.1c13a8",
+        "type": "debug",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Done",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "complete",
+        "statusType": "msg",
+        "x": 1130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "12f229bfef5ad2a5",
+        "type": "function",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Ready for next lines",
+        "func": "return [\n    msg.complete || msg.abort ? msg : null,\n    { tick: true },\n];\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 160,
+        "wires": [
+            [
+                "ee38d447.1c13a8"
+            ],
+            [
+                "1b00f74dc3098005"
+            ]
+        ]
+    },
+    {
+        "id": "178252a8d3c54b16",
+        "type": "function",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "",
+        "func": "let payload = `(0, FALSE),`;\nif (msg.payload && msg.payload.length > 0) {\n    for (const line of msg.payload) {\n        const valid = 'TRUE'; // Call some kind of test\n        payload += `(${line['id']}, ${valid}),`;\n    }\n}\nmsg.payload = payload.slice(0, - 1);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "6d2073ec4db26f2f"
+            ]
+        ]
+    },
+    {
+        "id": "4fd30ba36702842a",
+        "type": "debug",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Progress",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "parts.index",
+        "statusType": "msg",
+        "x": 860,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1b00f74dc3098005",
+        "type": "postgresql",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "SELECT many",
+        "query": "SELECT * FROM mytable\nORDER BY id ASC\nLIMIT 2000;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": true,
+        "rowsPerMsg": "100",
+        "outputs": 1,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "178252a8d3c54b16"
+            ]
+        ]
+    },
+    {
+        "id": "6d2073ec4db26f2f",
+        "type": "postgresql",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "UPDATE many",
+        "query": "UPDATE mytable AS c\nSET validity = v.validity\nFROM (VALUES\n\t{{{ msg.payload }}}\n) AS v (id, validity)\nWHERE v.id = c.id;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": false,
+        "rowsPerMsg": "1",
+        "outputs": 1,
+        "x": 660,
+        "y": 220,
+        "wires": [
+            [
+                "12f229bfef5ad2a5",
+                "4fd30ba36702842a"
+            ]
+        ]
+    },
+    {
+        "id": "64a657de3954a4b5",
+        "type": "debug",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Results",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "pgsql.rowCount",
+        "statusType": "msg",
+        "x": 480,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "adf069475c5e0ba3",
+        "type": "postgresql",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "SELECT",
+        "query": "SELECT * FROM mytable\nWHERE id < 100;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": false,
+        "rowsPerMsg": "1",
+        "outputs": 1,
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "64a657de3954a4b5"
+            ]
+        ]
+    },
+    {
+        "id": "3134bfc0f12e13c3",
+        "type": "inject",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "adf069475c5e0ba3"
+            ]
+        ]
+    },
+    {
+        "id": "d04c65ee97e3a273",
+        "type": "inject",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Prepare",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "82b7c689d6682f72"
+            ]
+        ]
+    },
+    {
+        "id": "c5f0b4b2442e3137",
+        "type": "debug",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "Done",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "pgsql",
+        "statusType": "msg",
+        "x": 470,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "82b7c689d6682f72",
+        "type": "postgresql",
+        "z": "7aa1f4e9917cbdbf",
+        "name": "ADD COLUMN",
+        "query": "ALTER TABLE mytable\n    DROP COLUMN IF EXISTS validity;\n\nALTER TABLE mytable\n    ADD COLUMN validity BOOLEAN;\n",
+        "postgreSQLConfig": "20ae1e52d1eef983",
+        "split": false,
+        "rowsPerMsg": "10",
+        "outputs": 1,
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "c5f0b4b2442e3137"
+            ]
+        ]
+    }
+]
