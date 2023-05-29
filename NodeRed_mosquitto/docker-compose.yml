@@ -15,7 +15,7 @@ services:
     links: 
       - mosquitto
     networks:
-      - miaReteProgetto
+      - miaReteProgetto 
   mosquitto:
     image: eclipse-mosquitto
     hostname: mosquitto
